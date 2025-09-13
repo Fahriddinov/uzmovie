@@ -62,7 +62,39 @@ const movies = [
     {
         name: "Mikkining yovuzlar uyi uzbek o'zbek tilida",
         image: "image/Mikkining yovuzlar uyi uzbek o'zbek tilida.png",
-    }
+    },
+    {
+      name: "Qurollangan qizaloq (premyera, o'zbek tilida, Uzbek)",
+      image: "image/Qurollangan qizaloq (premyera, o'zbek tilida, Uzbek).png",
+  },
+  {
+      name: "Qutqaruv topshirig'i 2: Zarba nuqtasi",
+      image: "image/Qutqaruv topshirig'i 2_ Zarba nuqtasi.png",
+  },
+  {
+      name: "Topshiriqdagi odam / Missioner",
+      image: "image/Missioner.png",
+  },
+  {
+      name: "Marshall",
+      image: "image/Marshall.png",
+  },
+  {
+    name: "Yomg'irdagi uchrashuv",
+    image: "image/Yomg'irdagi uchrashuv.png",
+},
+{
+    name: "O'g'irlik Talonchilik premyera uzbek o'zbek tilida",
+    image: "image/O'g'irlik Talonchilik premyera uzbek o'zbek tilida.png",
+},
+{
+    name: "Hech kim 2 premyera uzbek o'zbek tilida",
+    image: "image/Hech kim 2 premyera uzbek o'zbek tilida.png",
+},
+{
+    name: "Telma premyera uzbek o'zbek tilida",
+    image: "image/Telma premyera uzbek o'zbek tilida.png",
+}
 ]
 
 const moviesGrid = document.getElementById("moviesGrid");
