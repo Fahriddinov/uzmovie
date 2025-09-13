@@ -98,9 +98,8 @@ randomBtn.addEventListener("click", showRandomMovie);
 
 const searchInput = document.querySelector("input[placeholder='Qidirish...']");
 
-// Функция для отображения фильмов по массиву
 function displayMovies(filteredMovies) {
-  moviesGrid.innerHTML = ""; // очищаем старые карточки
+  moviesGrid.innerHTML = "";
   filteredMovies.forEach(movie => {
     const card = document.createElement("div");
     card.className = "bg-gray-800 rounded-lg overflow-hidden shadow w-[210px] px-[10px] hover:shadow-lg transition cursor-pointer";
@@ -116,12 +115,18 @@ function displayMovies(filteredMovies) {
   });
 }
 
-// При вводе текста фильтруем
 searchInput.addEventListener("input", (e) => {
   const query = e.target.value.toLowerCase();
   const filtered = movies.filter(movie => movie.name.toLowerCase().includes(query));
   displayMovies(filtered);
 });
 
-// При загрузке показываем все
 displayMovies(movies);
+
+    document.getElementById("header-toggle").addEventListener("click", () => {
+      document.getElementById("header-menu").classList.toggle("hidden");
+    });
+
+    document.getElementById("section1-toggle").addEventListener("click", () => {
+      document.getElementById("section1-menu").classList.toggle("hidden");
+    });
